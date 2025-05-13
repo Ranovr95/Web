@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tentang Rakpop</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        text-align: center;
+      }
+
+      .typing-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+      }
+
+      .typing {
+        font-size: 1.5rem;
+        width: 80%;
+        border-right: 2px solid #333;
+        white-space: nowrap;
+        overflow: hidden;
+        animation: typing 5s steps(60, end), blink 0.75s step-end infinite;
+      }
+
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+        to {
+          width: 80%;
+        }
+      }
+
+      @keyframes blink {
+        50% {
+          border-color: transparent;
+        }
+      }
+
+      main {
+        max-width: 800px;
+        margin: 40px auto;
+        background-color: gray;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      main p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        margin: 20px 0;
+      }
+
+      footer {
+        margin-top: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="Logo.png" alt="Logo Perusahaan" />
+      <h1>Rakpop</h1>
+    </header>
+
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="galeri.html">Galeri</a>
+    </nav>
+
+    <div class="typing-container">
+      <div class="typing">
+        Selamat datang di Rakpop – rumahnya para pecinta K-pop sejati!
+      </div>
+    </div>
+
+    <main>
+      <h2>Tentang Rakpop</h2>
+      <p>
+        Di <strong>Rakpop</strong>, kami menghadirkan produk-produk eksklusif
+        dan original langsung dari Korea, mulai dari album, merchandise, hingga
+        koleksi spesial yang sulit ditemukan.
+      </p>
+      <p>
+        Misi kami sederhana: membuat belanja K-pop jadi pengalaman yang
+        menyenangkan, mudah, dan pastinya aman. Dari penggemar, oleh penggemar,
+        untuk penggemar.
+      </p>
+      <p>
+        Terima kasih sudah berkunjung ke Rakpop. Selamat berbelanja dan
+        Saranghae! 💜
+      </p>
+    </main>
+
+    <footer>
+      <p>Alamat: Jl. SoulSelatan | Email: Rakpop@gmail.com</p>
+    </footer>
+  </body>
+</html>

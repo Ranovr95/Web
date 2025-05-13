@@ -2,23 +2,36 @@
 <html lang="id">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portofolio</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>Beranda</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="text-section">
-        <h1 id="typing-text"></h1>
-        <p>Mahasiswa Sistem Informasi</p>
-        <a href="portofolio.html" id="portfolio-link" class="portofolio-button">
-          Portofolio Saya <span class="arrow">→</span>
-        </a>
-      </div>
-      <div class="image-section">
-        <img src="saya.jpg" alt="Foto Profil" class="fade-out" />
-      </div>
-    </div>
-    <script src="main.js"></script>
+    <header>
+      <img src="Logo.png" alt="Logo Perusahaan" />
+      <h1>Rakpop</h1>
+    </header>
+    <nav>
+      <a href="#" onclick="loginPrompt()">Home</a>
+      <a href="#" onclick="loginPrompt()">About</a>
+      <a href="#" onclick="loginPrompt()">Galeri</a>
+    </nav>
+    <main>
+      <h2>Selamat Datang di Rakpop</h2>
+      <p>Klik salah satu menu di atas untuk melanjutkan.</p>
+    </main>
+    <footer>
+      <p>Alamat: Jl.SoulSelatan | Email: Rakpop@gmail.com</p>
+    </footer>
+    <script>
+      function loginPrompt() {
+        const user = prompt("Masukkan username:");
+        const pass = prompt("Masukkan password:");
+        if (user === "admin" && pass === "123") {
+          window.location.href = "home.html";
+        } else {
+          alert("Login gagal. Username atau password salah.");
+        }
+      }
+    </script>
   </body>
 </html>
